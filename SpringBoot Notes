@@ -1,0 +1,93 @@
+Spring boot:
+  
+           It is a java frame work which is used to build web applications efficiently.
+
+Dependency injunction:
+
+Annotation:A type of symbol which nothing but a symbol '@'+name of annotation
+           
+           Annotation is mostly used to define that the method or class 
+          
+           performs for what? or how?.
+
+Some types of annotations:
+
+           @Controller-A type of annotation which is used to define that the servlet or java file that should be
+
+                       Performed as controller.the main use of controller is to make that the requested view page
+                   
+                       To be visible on browser where we requested.
+           
+           @ResponseBody-is a type of annotation which is only used when we are return something which is not returning 
+
+                         that the file format instead of that the method where we initialised it and the method can only
+      
+                         String or any other data types value except files like .jsp etc..
+
+           @RequestMapping()-is a type of annotation which is used to map that the method where it initialised and returns 
+
+                            what that the method actually return.In between of that braces the request name or view name 
+
+                            to be placed then only it is ease for mapping the correct jsp file for the corresponding request.
+
+Jaser jar file(tomcat jaser):
+       It is a type of jar file which is used to make that the jsp file to be visible on the browser by adding it's dependency 
+
+       on pom.xml file.so whenever we want to display our jsp file for incoming request we need to add the dependency of jaser 
+
+       jar file on pom.xml.
+
+MVC-Model View Controller
+
+Actual process:
+
+    Client request->server->web container->searching for servlet or jsp having the request name,once it is found.->response to the client.
+
+Controller=servlet=java file
+
+*Controller can contains a lot of methods with unique request name.
+
+Artifact- project name
+
+Group id- package name
+
+All the html or jsp files should be in src/main/webapp.
+
+All the java or servlet should be in src-java-main/com.package.name.
+
+Example Controller:(which is used return jsp file while the word called index is coming as a request)
+       import...
+       
+       @Controller
+       
+       Public class NormalServletController{
+
+            @RequestMapping("index")
+  
+            Public String index(){
+     
+                  return "index.jsp";
+
+            }
+
+        }
+
+Now develop JSP:
+       <html>
+
+       <head>
+
+       <title> welcome to softworks </title>
+
+       </head>
+
+       <body>
+
+       //your html content to be here
+
+       </body>
+
+       </html>
+
+              
+               
