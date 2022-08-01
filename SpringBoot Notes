@@ -186,4 +186,28 @@ Public class NormalController{
 
 }
 
+CRUD:CREATE READ UPDATE DELETE
+
+Firstly for database connection with our springboot,All we need to do is adding the connection by application.properties file like the followings
+
+   Servlet.h2.console.enabled=true
+ 
+   Servlet.datasource.platform=h2 //not mandatory for h2 database
+
+   Servlet.datasource.url=jdbc.h2.mem.user
+
+And then check your db whether working or not just by entering
+
+Tha line 'localhost:8080/h2.console,once you searched like this you will get a db page but there is no table alloted
+
+For you to store your clients details,so to make a table for your datas you need to create a pojoclass or model for your datas which will be given by the end users
+
+And generate getter and setter methods and then you need to add an annotations,first annotation is @Entity which is to be placed on the above of your pojoclass name
+
+And add @Id on the above which data's to be stored in the database at your pojoclass.
+
+
+
+
+
 
