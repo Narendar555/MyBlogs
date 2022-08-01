@@ -30,6 +30,10 @@ Some types of annotations:
 
                             to be placed then only it is ease for mapping the correct jsp file for the corresponding request.
 
+           @RequestParam()-is type of annotation which is placed inside of service method to change the variable of user's value
+        
+                           To our desire variable name.to do that we just need to add user's variable request name.
+
 Jaser jar file(tomcat jaser):
        It is a type of jar file which is used to make that the jsp file to be visible on the browser by adding it's dependency 
 
@@ -38,6 +42,10 @@ Jaser jar file(tomcat jaser):
        jar file on pom.xml.
 
 MVC-Model View Controller
+
+Model- it is nothing but a data which will come as request value from user.
+
+View- it is a jsp or html page which will be displayed on the browser once the user requested.
 
 Actual process:
 
@@ -90,4 +98,92 @@ Now develop JSP:
        </html>
 
               
+Application.Properties:
+          
+              -It is type of file which is used for making that the controller to don't worry about 
+
+               which format to be displayed. 
+
+              -which is located at src\main\resources,here for making the above step to be done
                
+               We just add some lines on it.
+
+               *Servlet.mvc.view.prefix=/admin/ //here you should mention where your view is located
+               *Servlet.mvc.view.suffix=.jsp
+
+              That's it...
+
+Handling the additional request:
+               When user sends an additional queries or request with view page request 
+
+               we need to get the value of it.for that we need to add one parameter called 'HttpServletRequest' with one object on controller or service method
+
+               Then only we can access the value which is passed by the user as a request to the server by using
+    
+               String s=request.get parameter()//inside of braces add on which variable that the user store the value and send it as request
+
+HttpSession:
+     It is type of class which is mostly used for security,traffic and protect that the one user only can access their account from one device only.
+
+     syntax-HttpSession session=request.get Session()//that request is yours object of HttpServletRequest.
+
+     Here we need to add set attribute,usually this method is used to store that the user request value on other object for
+
+     Maintaining the session,so that the session can remain utill this session ends.
+
+ModelAndView:
+     A type of class which is used to add both model and view on one object by creating an object for it.
+
+     Using  obj.setViewName(//your view should be here ) which is used to set your view on ModelAndView.
+
+     Using obj.add("//your new obj",your pojo obj) which is used to add your data's on ModelAndView then just return obj of ModelAndView
+
+     Then only we could follow springboot concept.if you don't use MAV(this)concept it means that you are
+
+     Against the principles of seperate of concerns.
+
+Let's see some examples:
+1.this is not based on SpringBoot concept
+@Controller
+Public class NormalController{
+       
+       @RequestMapping("index")
+       Public String index(HttpRequest request){
+
+              //your logic to be here with session and it's methods
+
+       }
+
+2.this is not based on SpringBoot concept
+@Controller
+Public class NormalController{
+       
+       @RequestMapping("index")
+       Public String index(String name,HttpSession session){
+
+              //your logic to be here with session methods
+
+       }
+
+3.this is based on SpringBoot concept
+@Controller
+Public class NormalController{
+       
+       @RequestMapping("index")
+       Public ModelAndView index(//pojoclassname pojoclassobject to be here ){
+
+              //there is no session will be included
+       
+              ModelAndView mvc=new ModelAndView ();
+
+              mvc.SetViewName(//your view name without that format);
+
+              mvc.add(//your model or pojoclass obj to be here with new obj for use of your view like-'details',pojoobj);
+
+              return mvc;
+
+       }
+
+}
+
+
