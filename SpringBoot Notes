@@ -190,11 +190,11 @@ CRUD:CREATE READ UPDATE DELETE
 
 Firstly for database connection with our springboot,All we need to do is adding the connection by application.properties file like the followings
 
-   Servlet.h2.console.enabled=true
+   spring.h2.console.enabled=true
  
-   Servlet.datasource.platform=h2 //not mandatory for h2 database
+   spring.datasource.platform=h2 //not mandatory for h2 database
 
-   Servlet.datasource.url=jdbc.h2.mem.user
+   spring.datasource.url=jdbc.h2.mem.user
 
 And then check your db whether working or not just by entering
 
@@ -204,7 +204,72 @@ For you to store your clients details,so to make a table for your datas you need
 
 And generate getter and setter methods and then you need to add an annotations,first annotation is @Entity which is to be placed on the above of your pojoclass name
 
-And add @Id on the above which data's to be stored in the database at your pojoclass.
+And add @Id on the above which data's to be stored in the database at your pojoclass.now our h2 database got the @id or variables which is defined in pojoclass
+
+And create a table for it on our DB.
+
+Once it is finished then all we need to do is creating htm or jsp file to get values from users so that we need to add tag <form> with action an In which action we need to add which will have to trigerred while pressing
+
+Then submit,once we added an action the we let the controller to know that,then only the controller can return a ideal file to the user as a response,and one thing we need to do is adding logic to store data's on DB
+
+Then only our details will be stored on database simultaneously.
+
+
+Pojo class plays a very big role to rendering and retrieving the data's from or to the DB.
+
+Here we need to create some variables to store user information's or values,that variables would be in private and generate a getter and  setter methods publicly for both of them.
+
+And for avoiding the printing of an hashcode while printing a model or pojoclass object we need to over ride the method which is to string() on pojoclass.
+
+In controller,we need to tell the controller which one will be coming as a request by adding annotation @RequestMapping().then if request matches then define what will the method do in the body of the service method
+
+And don't forget to add jasper file and create an interface which extends crudrepositary
+
+Interface:
+   Public Interface interface name extends CrudRepositary<pojoclass name,primarykey-intanyother>{
+
+   }
+
+  That's it..
+You need to autowired an interface on your controller then only we can access database.
+
+
+Just like
+   If as request add user is coming from jsp file to controller then we define like
+
+   
+   @Controller
+
+   Public class NormalServletController{
+  
+                
+               @Autowired
+               Interfacename obj;
+
+
+               @RequestMapping("index")
+               Public ModelAndView index(){
+
+                       ModelAndView mv= new ModelAndView ("index.jsp");
+                
+                       return mv;
+               }
+  
+               RequestMapping("adduser")
+               Public ModelAndView adduser(pojoclassname obj){
+
+                       Interfaceobj.save(pojoclassobject);
+
+                       ModelAndView mv= new ModelAndView ("index.jsp");
+                
+                       return mv;
+               }
+
+    }
+
+
+
+ 
 
 
 
