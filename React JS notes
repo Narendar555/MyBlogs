@@ -1,1 +1,23 @@
--------Content will be uploaded as soon--------
+React JS:
+   React JS is type of javascript framework,which is mostly used for
+
+   Making the way of developing the website in a efficient way or easier.
+
+React component:
+
+       Component is just like an elements in a website such as a menubar,navigation bar,thumbnails and buttons etc..
+
+       Which is mainly used for making independent of elements in a website.
+
+Main files to focus on every react JS project as a developer:
+
+           -App.js
+
+           -index.js
+
+           -index.html
+These are the files we need to have more focus on.
+
+The contents in App.js will be rendered to index.js and then the content in index.js finally rendered
+
+To index.html.this how the process will go on.
