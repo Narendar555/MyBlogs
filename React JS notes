@@ -21,3 +21,53 @@ These are the files we need to have more focus on.
 The contents in App.js will be rendered to index.js and then the content in index.js finally rendered
 
 To index.html.this how the process will go on.
+
+Creating a component:
+
+      We can create a components by just writing the a JS function or defining the class.
+
+      When we are creating a components by using function we need to add what should be display here in the components as return statement
+
+      It should be in JSX format like Html with Javascript.
+
+      Example:
+
+        function Normal(props){
+          
+           <div class="App">
+           return <h2> {props.variableName} </h2>;
+           </div>
+
+        }
+This is how a function component would be look like on App.js.
+
+Ok now see how a components creating by JS classes here:
+         
+       When we are going to create a components using class then we should call render() method
+
+       And then inside of that we should write our code to display on components with the help of return statement.one more thing I would
+
+       Like to say that is neve forget to extends React.Component when you are creating component using classes.
+  
+       Eg:
+     
+        Class class_name extends React.Component {
+
+         render(){
+     
+          return //our code to be here;
+
+         }
+
+        }
+Before creating a components we already have a root or parent component on App.js file so All components we creating 
+
+Should be a child components of root or parent component.
+
+To use our child components or making the relationship between our child and root component we must add our
+
+Own components name as an HTML tag in the root component then only it will be work.
+
+We can also create a nested component by adding one child component on another child.then add that another child component on root.
+
+Then  it will be called as nested component.
