@@ -3,6 +3,19 @@ React JS:
 
    Making the way of developing the website in a efficient way or easier.
 
+How to run and create the react app on terminal:
+
+      firstly we need to install node.js on our device then we need to go where our project to be created
+
+      And then create a folder omn terminal by using a command like mkdir nameofthefolder and using cd foldername to go that folder
+
+      Then using npm init-y to generate project details defaultly.And then need to get out from the existing folder and just intialize the  create react library globally by using "npm i -g install create react app unsafe...=true" and then using create-react-app project name to create react project which helps to form the entire structure
+
+      For react project like app.js,index.js and index.html.
+
+      Once our project is completely created then we need to go our project by using cd project name and npm start this will let you to see the content pf your project on the browser with a url:localhost:3000.
+
+
 React component:
 
        Component is just like an elements in a website such as a menubar,navigation bar,thumbnails and buttons etc..
@@ -71,3 +84,15 @@ Own components name as an HTML tag in the root component then only it will be wo
 We can also create a nested component by adding one child component on another child.then add that another child component on root.
 
 Then  it will be called as nested component.
+
+One point to note that is we can also create our required components in separate files but we must be named it with a format is .jsx.
+
+And then we can use it by importing that file by writing "import {here your jsx file name to be here} from './foldername/filename';
+
+Whenever we are creating components using JS classes we need to import the statement that is " import React from 'react';.
+
+Babel library:
+        
+        It is a type of library which is mainly used for compiling our jsx code into JS code the purpose why it is doing that nothing but a browser can not understand our jsx code 
+
+        So our babel library helps to convert our jsx code to JS code.
