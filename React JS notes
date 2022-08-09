@@ -96,3 +96,61 @@ Babel library:
         It is a type of library which is mainly used for compiling our jsx code into JS code the purpose why it is doing that nothing but a browser can not understand our jsx code 
 
         So our babel library helps to convert our jsx code to JS code.
+
+Props:
+  It is nothing but a properties,which is mainly used for passing the data's from parent component
+
+  To child components.it doesn't modify the datas,whenever we are give a datas from parent to child we may give a lot of arguments with values from app.js why that app.js is nothing because where only your parent component is located.
+
+  So we need to get all of the arguments with its values so we can't write a lot of parameters in child components that's why we need to use props then we can access any arguments which are passing by parent to child like "props.agruementname".
+
+  Eg:
+
+   App.js
+   import React from 'react';
+ 
+   import {Sample} from './components/Sample';
+
+   function App(){
+
+     return(
+
+       <div className:App>
+         
+         <Sample name="react"></Sample>
+       </div>
+
+     )
+
+
+
+   }
+
+   export default App;
+
+--------------------------------
+Sample.jsx
+   
+   import React from 'react';
+
+   function Sample(props){
+   
+     return(
+
+       <p>{props.name}</p>
+   }
+
+   export default Sample;
+Above there is no type of modifications will be done because it's props.
+
+State:
+   
+    It helps to manage the data's within the components and the modifications can be done here in the state 
+
+    It is a dynamic and it can only created on class based components and in that class it will be only written on constructor which will be given the parameter as props and inside of that constructor
+
+    The super(props) keyword should be there and then create a state like -this.state={code to be here};
+
+    We can change the state from intialize stage to our desired stage by using the predefined function called setState() write the function like this.setState(code to be here);
+
+    That's it.this is how we would create a state to keep our website dynamic.
