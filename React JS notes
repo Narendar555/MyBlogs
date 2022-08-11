@@ -154,3 +154,142 @@ State:
     We can change the state from intialize stage to our desired stage by using the predefined function called setState() write the function like this.setState(code to be here);
 
     That's it.this is how we would create a state to keep our website dynamic.
+    
+installing the bootstrap on react projects:
+    
+         first of all we need to open a command prompt or  a terminal on the project which needs bootstrap and then type a command like "npm install react-bootstrap"
+         
+         then type "npm install bootstrap" once it hs been istalled then we can use bootstrap on our projects.whenevr we are going to use bootstrap compoents we must write an import statement like 'import {your component name should be there} from 'react-bootstrap';
+         
+         and then we need include bottstraap cdn on out index.html page so that we need to copy bootstrap cdn link from official website of bootstrap and then copy it on then index.html page.
+         
+         now you can create a bootstrao components on your projects.
+         
+
+let's see about this.functionname.bind(this):
+
+      bind(this) is most commonly used for letting know that the function we write or we call which has 'this' keyword usually it doesn't know that 'this' means what so that
+      
+      whenever we calling that type of function we must need to bind(this) then only it accepts or knows that 'this' pointing the current class and can able to get scope to access all
+      
+      the methods and variables in the particular class.
+      
+      we can also place our bind on the constructor of the class.
+      for example:
+      
+      1. import React from 'react';
+        
+        class Normal extends React.Component{
+        
+        constructor{
+        //constructor always know about 'this'
+          this.state={count:0};
+        
+        }
+        
+        handlefunction(){
+         this.setState(
+            this.state.count:count+1;
+         )
+        
+        }
+        render(){
+         return(
+         
+           <div><p>helloo welcome {count}</P>
+                <button onClick={this.handlefunction.bind(this)}>NORMAL BIND</button>   
+           </div>
+         )
+        }
+         }
+         
+         
+      2. import React from 'react';
+        
+        class Normal extends React.Component{
+        
+        constructor{
+        //constructor always know about 'this'
+          this.state={count:0};
+          this.handlefunctioon:this.handlefunction.bind(this);
+        
+        }
+        
+        handlefunction(){
+         this.setState(
+            this.state.count:count+1;
+         )
+        
+        }
+        render(){
+         return(
+         
+           <div><p>helloo welcome {count}</P>
+                <button onClick={this.handlefunction}>constructorlvl BIND</button>   
+           </div>
+         )
+        }
+         }
+         
+     3. import React from 'react';
+        
+        class Normal extends React.Component{
+        
+        constructor{
+        //constructor always know about 'this'
+          this.state={count:0};
+        
+        }
+        
+        handlefunction(){
+         this.setState(
+            this.state.count:count+1;
+         )
+        
+        }
+        render(){
+         return(
+         
+           <div><p>helloo welcome {count}</P>
+                <button onClick={() => this.handlefunction()}>arrowfunc BIND</button>   
+           </div>
+         )
+        }
+         }    
+         
+whenever we are using arrow fuctionality we no need to use bind.so it is a best way to use state effectively.
+
+react hooks:
+ 
+    which is mainly used for creating the components by functions,for that the 'useState()' is majorly used
+    
+    useState() is a function which is used to create a state on function based components possibily.
+    
+    while we use that function useStae() we need to write an import statement for that like "import React,{useState} from 'react';
+    
+    we would craete or implement the useStae function by "const [varuablename,functionname]=useState(need to write our initial state to be);
+    
+    later we can change the state with the help of what we written as a function name on the square braces. let's see some example below. 
+    
+    eg:
+    
+    1. import React,{useState} from 'react';
+        
+        class Normal extends React.Component{
+        
+        const [count,setfunc]=useState(0);
+        
+        handlefunction(){
+         setfunc(count+1);
+        
+        
+        }
+        render(){
+         return(
+         
+           <div><p>helloo welcome {count}</P>
+                <button onClick={() => this.handlefunction()}>arrow BIND</button>   
+           </div>
+         )
+        }
+         }
