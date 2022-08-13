@@ -293,3 +293,118 @@ react hooks:
          )
         }
          }
+
+LIFECYCLE OF REACT COMPPONENTS:
+
+    lifecycle can be only implemented on class based components,because lifecycle has a structure it has render(),constructor and componentdidmount,componentdidupdate,componentdidunmount
+    
+    so that it can implement only on class based component,but with the help of react hooks we can also create or implement on function based components.
+    
+    componentdidmount- which is mainly used to initialize the state,using this method we can initialize the state,there is no need to call this method to perform,
+                       
+                       it will be called automatically.which is better for writing the logic for getting datas from server side.
+                       
+    componentdidupdate- which is mainly used to change theh state from legacy,with the help of this method we can change the state from initialized value.
+    
+    componentdidunmount- which is used to delete the state from dom,that's why the React performance is always best.
+    
+    lets see how..
+    
+       the useEffect react hooks plays a major role on implementing a lifecycle on function based components.
+       
+     eg:
+     //normal class based component
+     
+     import React from 'react';
+     
+     import {useEffect} from 'react';
+     
+     class Normal extends React.Component{
+        
+          constructor(props){
+          
+              this.state={count:0};
+              console.log(count);
+          
+          }
+          componentdidmount(){
+          
+              this.setState(
+              
+                  this.state.count:count+1;
+                  console.log(count);
+              )
+          
+          }
+          
+          componentdidupdate(){
+          
+               this.setState(
+                  this.state.count:count+1;
+                  console.log(count);
+               
+               )
+               
+          componentdidunmount(){
+          
+            this.setState(
+            
+                  this.state.count:count-1;
+                  console.log(count);
+            )
+          
+          }      
+               
+           render(){
+           
+               return(
+               
+                 <h2>the count is:{count}</h2>
+               
+               
+               )
+           
+           
+         }     
+          
+          
+          
+     }
+     
+     
+ }
+    
+ 2.//function based component with the help of useEffect()   
+ 
+ 
+     
+     import React from 'react';
+     
+     import {useState,useEffect} from 'react';
+     
+
+    
+               
+           function Advance(){
+             const {count,setfuntn}=useState(0);
+                useEffect=()=>{
+                  
+                  document.title=${count};//it will be used in future  
+                
+                }
+           
+               return(
+               
+                 <h2>the count is:{count}</h2>
+                 <button onClick={()=>setfuntn(count+1)>click</button>
+               
+               
+               )
+           
+           
+         }     
+          
+          
+
+    
+    
