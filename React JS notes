@@ -404,7 +404,23 @@ LIFECYCLE OF REACT COMPPONENTS:
            
          }     
           
-          
+ 
+
+REDUX IN REACT:
+ 
+    Redux is a main thing which is mainly used to develop big level of projects there a proper level has been managed to develop.
+    
+    those levels are Action-> (summary) ->Reducers (action+existiing state) ->new state.
+    
+    here,Action is used when someone press or click on the view page then it will send actually what they required as a summary to reducers.
+    
+    reducers is nothing but which is used to makinging a new state with the help of existing state and that summary.
+    
+    actually this is how that the redux is efficiently used to make a projects powerfully using these levels.
+
+list and keys:
+
+    list and keys are very impoertant in react for handling the datas efficiently.moreover we managing the datas through array. 
 
     
     
