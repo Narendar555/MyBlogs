@@ -1,1 +1,330 @@
+<html>
+<head>
+    <title> SOFTWORKS A VIRTUALIZED CORPORATE COMPANY </title>
+
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<script src="bootstrap.min.js"></script>
+
+	<!--<script src="Scripts\jscript.js"></script>-->
+	
+	<style>
+		#pa{color:yellow;}
+		#pa2{color:blue;}
+		#pa3{color:green;}
+		#b1{color:orannge;}
+		#dd{cellpadding:10px;}
+		#cl{color:red;}
+		#cc{color:white;
+		    text-align:center;}
+		#c{color:red;}
+    
+    .jj{color:white;}
+	</style>
+
+
+</head>
+<body>
+    
+ <div class="container bg-success">
+	<div class="container-md layout">
+	    <div class="shadow-lg p-3 mb-5 bg-body rounded">
+		<div class="men">
+		    
+			<p class="display-4 bg-white text-center">WELCOME TO THE SOFTWORKS CORP</p>
+			
+		
+		</div>
+		</div>
+		<div class="second">
+			<div class="s1">
+			    <b><h2 id="cc">LET ALL YOUR BURDENS TO US</h2></b>
+			    		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="soft.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="ca2.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="ca3.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="1638625145675.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="1638625145604.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+			
+			
+			</div>
+			
+			<div class="s2 container-md lead jj text-dark">
+			  <div class="row">
+			
+							
+							
+			  <div class="row ">
+			    <div class="col text-light">
+			        <b><marquee direction="right" scrollamount="7" onmouseover="this.stop()" onmouseout="this.start()">GET RESOLVED FROM ALL YOUR PROBLEMS BY USING THE GIVEN FORM</marquee></b>
+					<b>CONTACT DETAILS ARE GIVEN BELOW YOU CAN CONTACT ANYTIME <br>
+					INSTAGRAM:<a href="https://instagram.com/narendar_christ_?utm_medium=copy_link"> @narendar_christ_
+				</a><b><br>
+					<br>
+					<marquee scrollamount="8" onmouseover="this.stop()" onmouseout="this.start()"><i>INTENTION OF SOFTWORKS IS PROVIDING GOOD CUSTOMER SERVICES AT RIGHT TIME</i>😊</marquee><br>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			</div>
+			  		
+			
+			
+			
+			
+			</div>
+		</div>	
+		<div class="container-md app">
+			<div id="a1">
+			    <p id="c">note:*use underscore instead of spaces</p>
+			    <form action="first.php" method="post">
+			  
+				<table>
+					<input  placeholder="ENTER YOUR NAME" required name="uname"><br><br>
+					<input  placeholder="ENTER YOUR MOBILE NO" required name="umob"><br><br>
+					<input  placeholder="ENTER YOUR MAIL ID" required name="ma"><br><br>
+					<textarea rows="5" cols="50" placeholder="DESCRIBE YOUR PROBLEMS HERE" required name="cmt"></textarea><br><br>
+			
+					<input type=number placeholder="RATE TO WEBSITE OUT OF 10" required name="rt"><br><br>
+					<p id="cl">*NOTE:fill out all the fields</p>
+
+					<button class=" btn btn-warning b1 jj lead" onclick="show()">SUBMIT</button>
+					<a href="https://www.instamojo.com/@softworks/"><button class=" btn btn-primary b1 jj lead">paynow</button></a><br>
+
+
+			
+			
+			
+			
+				</table>
+				</form>
+			  	
+				
+			  
+			</div>
+			<div class="a2">
+				<marquee scrollamount="5" onmouseover="this.stop()" onmouseout="this.start()" direction="up">
+				    <li class="jj lead"><b>*UNDER DEVELOPMENT*</b></li>
+					<li class="jj lead"><b><u>SERVICES WE ARE PROVIDING:</u></b></li>
+					<li class="jj lead">QUICK RESPONSE TO CUSTOMER QUERIES WITHIN A DAYS</li>
+					<li class="jj lead">GIVING A RIGHT SUGGESTIONS VIRTUALLY<span class="badge text-bg-primary">new</span></li>
+					<li class="jj lead">DOING AN ACTIVITIES AS OUR CUSTOMERS WANT</li>
+					<li class="jj lead">DAY-BY-DAY UPDATES</li>
+					<li class="jj lead">CONNECTING A CLIENTS TO RIGHT VENDORS</li>
+					<li class="jj lead">RESOLVING</li>
+				    <li class="jj lead">GIVING A BASIC KNOWLEDGE OF PROGRAMMING</li>
+				</marquee>
+			</div>
+			
+		
+		
+		
+		
+		</div>
+
+		<div id=" container-md footer">
+			
+			<div id="f1">
+				<p class="jj lead" id="pa"></p><br>
+				<p class="jj lead" id="pa2"></p><br>
+				<p class="jj lead" id="pa3"></p>
+			  
+			  
+			
+			
+			
+			</div>
+			<p class="container-md lead jj">THE SOFTWORKS IS A SITE WHICH PROVIDES A WIDE RANGE OF SOFTWARE SOURCE CODES TO THE USER SO KINDLY MAKE USE OF IT.</p>
+		
+			<center><object data="Soft.mp4" width="500" height="400"></object></center>
+			<div class="jj lead container-md" id="f2">THE OWNER OF THE SITE S.NARENDAR IS AN INDIAN FULL STACK DEVELOPER AND THE FOUNDER OF <a href=https://softworks-corp.business.site/>www.softworks-corp.business.site</a> AND THE FATHER OF AN APP FRYM.ASSOCIATED WITH SOFTWARE-CODES :)</div><br>
+            <div class="container-md lead jj text-muted bg-light">A MAN WHO WORKS HARD HE NEVER GIVE UP BY GOD</div>
+			<div class="row">
+				<div class="col container-md"><button class="btn btn-primary disabled"><span class="spinner-grow spinner-grow-sm"></span></button></div>
+				<div class="col lead jj text-center">-Narendar.S</div>
+				<div  id="dd" class="col-2"><button class="btn btn-primary"><span class="spinner-grow spinner-grow-sm"></span></button></div>
+				
+				
+			
+			
+			
+			
+			</div>
+			
+		
+		
+		
+		
+		
+		
+		
+		</div>
+		
+		
+		
+		
+	
+
+
+
+
+	</div>
+ </div>	
+	
+					<script>
+					    function clear(){
+document.getElementById("pa").innerHTML="  ";
+							  
+							  document.getElementById("pa2").innerHTML=" ";
+							  
+							  document.getElementById("pa3").innerHTML=" ";
+					    }
+							
+							
+							function show()
+							{
+							  box1=document.getElementById("name").value;
+							  box2=document.getElementById("age").value;
+							  box3=document.getElementById("mail").value;
+							  document.getElementById("pa").innerHTML=("your name is "+box1);
+							  
+							  document.getElementById("pa2").innerHTML=("your age is "+box2);
+							  
+							  document.getElementById("pa3").innerHTML=("your mail id is "+box3);
+								 
+							}
+							
+							x=["ca1.jpg","ca2.jpg","ca3.jpg","programmer.jpeg"];
+							slide=document.getElementById("im");
+							count=-1;
+	
+							
+							function forward()
+							{
+								count=count+1;
+								/*if(count<x.length)*/
+								if(count>3){
+								        count=1;
+								    }
+								    slide.src=x[count];
+								    
+							/*	else
+									count=0;
+									slide.src=x[count];
+									count=count+0;*/
+							    console.log(count);
+							
+							
+							
+							
+							
+							
+							
+							}
+							function backward()
+							{ 
+							   
+								count=count-1;
+								
+								/*if(count==-1)
+									count=3;*/
+									if(count<0){
+									    count=2;
+									}
+									slide.src=x[count];
+									
+								
+								
+								
+								/*slide.src=x[count];*/
+								console.log(count);
+								
+								
+								
+							    
+							
+							
+							
+							
+							
+							
+							
+							}
+							
+	
+	
+	
+	
+	
+	
+	
+					</script>
+</body>
+</html>
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+new2.css:
+
+
+
 
